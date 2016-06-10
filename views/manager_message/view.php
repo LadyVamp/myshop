@@ -1,79 +1,50 @@
-<?php include ROOT . '/views/layouts/header_admin.php'; ?>
-
+<?php include ROOT . '/views/layouts/header_manager.php'; ?>
+<!--/views/manager_message/view.php-->
 <section>
     <div class="container">
         <div class="row">
-            <br/>
+            <br/>        
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/manager">Менеджерпанель</a></li>
-                    <li><a href="/manager/order">Управление заказами</a></li>
-                    <li class="active">Просмотр заказа</li>
+                    <li class="active">Управление сообщениями</li>
                 </ol>
             </div>
-            
-            <h4>Просмотр заказа #<?php echo $order['id']; ?></h4>
-            <br/>
-            
-            <h5>Информация о заказе</h5>
-            <table class="table-admin-small table-bordered table-striped table">
-                <tr>
-                    <td>Номер заказа</td>
-                    <td><?php echo $order['id']; ?></td>
-                </tr>
-                <tr>
-                    <td>Имя клиента</td>
-                    <td><?php echo $order['user_name']; ?></td>
-                </tr>
-                <tr>
-                    <td>Телефон клиента</td>
-                    <td><?php echo $order['user_phone']; ?></td>
-                </tr>
-                <tr>
-                    <td>Комментарий клиента</td>
-                    <td><?php echo $order['user_comment']; ?></td>
-                </tr>
-                <?php if ($order['user_id'] != 0): ?>
-                    <tr>
-                        <td>ID клиента</td>
-                        <td><?php echo $order['user_id']; ?></td>
-                    </tr>
-                <?php endif; ?>
-                <tr>
-                    <td><b>Статус заказа</b></td>
-                    <td><?php echo Order::getStatusText($order['status']); ?></td>
-                </tr>
-                <tr>
-                    <td><b>Дата заказа</b></td>
-                    <td><?php echo $order['date']; ?></td>
-                </tr>
-            </table>
 
-            <h5>Товары в заказе</h5>
-
-            <table class="table-admin-medium table-bordered table-striped table ">
+            <h3>Список сообщений</h3>
+            <table class="table-bordered table-striped table">
                 <tr>
-                    <th>ID товара</th>
-                    <th>Артикул товара</th>
-                    <th>Название</th>
-                    <th>Цена</th>
-                    <th>Количество</th>
+                    <th>ID сообщения</th>
+                    <th>Дата</th>
+                    <th>Имя пользователя</th>
+                    <th>E-mail пользователя</th>
+                    <th>Сообщение пользователя</th>
+                    <th>Текст ответа</th>
+                    <th>Статус</th>
                 </tr>
-                <?php foreach ($products as $product): ?>
+                <?php foreach ($messagesList as $message): ?>
                     <tr>
-                        <td><?php echo $product['id']; ?></td>
-                        <td><?php echo $product['code']; ?></td>
-                        <td><?php echo $product['name']; ?></td>
-                        <td><?php echo $product['price']; ?> &#8381;</td>
-                        <td><?php echo $productsQuantity[$product['id']]; ?></td>
+                        <td>
+                            <a href="/manager/message/view/<?php echo $message['id']; ?>">
+                                <?php echo $message['id']; ?>
+                            </a>
+                        </td>
+                        <td><?php echo $message['date']; ?></td>
+                        <td><?php echo $message['user_name']; ?></td>
+                        <td><?php echo $message['user_email']; ?></td>
+                        <td><?php echo $message['user_message']; ?></td>
+                        <td><?php echo $message['response']; ?></td>
+                        <td><?php echo Message::getStatusText($message['status']); ?></td>    
+                        <td><a href="/manager/message/view/<?php echo $message['id']; ?>" title="Смотреть"><i class="fa fa-eye"></i></a></td>
+                        <td><a href="/manager/message/update/<?php echo $message['id']; ?>" title="Редактировать"><i class="fa fa-pencil-square-o"></i></a></td>
+                        <td class="red-cross" ><a href="/manager/message/delete/<?php echo $order['id']; ?>" title="Удалить"><i class="fa fa-times"></i></a></td>
                     </tr>
                 <?php endforeach; ?>
             </table>
 
-            <a href="/manager/order/" class="btn btn-default back"><i class="fa fa-arrow-left"></i> Назад</a>
         </div>
-
-
+         <a href="/manager/" class="btn btn-default back"><i class="fa fa-arrow-left"></i> Назад</a>
+    </div>
 </section>
 
 <?php include ROOT . '/views/layouts/footer.php'; ?>
