@@ -48,6 +48,8 @@ return array(
     'manager/order/delete/([0-9]+)' => 'managerOrder/delete/$1',
     'manager/order/view/([0-9]+)' => 'managerOrder/view/$1',
     'manager/order' => 'managerOrder/index',
+    //Статистика
+    'manager/stat' => 'managerStat/index',
     // Управление пользователями:    
     'admin/user/create' => 'adminUser/create',
     'admin/user/update/([0-9]+)' => 'adminUser/update/$1',

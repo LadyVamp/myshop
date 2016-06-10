@@ -11,7 +11,7 @@
             <br/>
             <ul class="admin-buttons">
                 <li><a class="btn btn-default" href="/manager/order" role="button" ><span class="glyphicon glyphicon-shopping-cart"></span> Управление заказами</a></li>           
-                <li><a class="btn btn-default" href="/manager/statistics" role="button" ><span class="glyphicon glyphicon-stats"></span> Просмотр статистики продаж</a></li>       
+                <li><a class="btn btn-default" href="/manager/stat" role="button" ><span class="glyphicon glyphicon-stats"></span> Статистика продаж</a></li>       
             </ul>
             </div>
             <div class="col-sm-3"></div>   
