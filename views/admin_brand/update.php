@@ -7,12 +7,12 @@
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/admin">Админпанель</a></li>
-                    <li><a href="/admin/brand">Управление брендами</a></li>
-                    <li class="active">Редактировать бренд</li>
+                    <li><a href="/admin/brand">Управление производителя</a></li>
+                    <li class="active">Редактировать производителя</li>
                 </ol>
             </div>
 
-            <h4>Редактировать бренд "<?php echo $brand['name']; ?>"</h4>
+            <h4>Редактировать производителя "<?php echo $brand['name']; ?>"</h4>
             <br/>
             <div class="col-lg-4">
                 <div class="login-form">

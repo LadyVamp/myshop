@@ -1,5 +1,4 @@
-<?php //include ROOT . '/views/layouts/header.php'; ?>
-<?php include ROOT . '/views/layouts/header_admin.php'; ?>
+<?php include ROOT . '/views/layouts/header.php'; ?>
 
 <section>
     <div class="container">
@@ -8,8 +7,7 @@
             <div class="col-sm-4 col-sm-offset-4 padding-right">
                 <div class="green-msg">
                     <?php if ($result): ?>
-                        <!--<span><i class="fa fa-check" aria-hidden="true"></i> Данные отредактированы!</span>-->
-                        <span><i class="fa fa-check" aria-hidden="true"></i> Пароль успешно изменен!</span>
+                        <span><i class="fa fa-check" aria-hidden="true"></i> Данные отредактированы!</span>
                         <div class="space"></div>
                         <br/><a href="/cabinet/" class="btn btn-default back"><i class="fa fa-arrow-left"></i> Назад</a>
                 </div>        
@@ -23,20 +21,17 @@
                         <?php endif; ?>
 
                     <div class="signup-form"><!--sign up form-->
-                        <!--<h3>Редактирование данных</h3>-->
-                        <h3>Сменить пароль</h3>
+                        <h3>Редактирование данных</h3>
                         <form action="#" method="post">
                             <p>Имя:</p>
                             <input type="text" name="name" placeholder="Имя" value="<?php echo $name; ?>"/>
                             
-                            <p>Пароль:</p>
-                            <input type="password" name="password" placeholder="Пароль" value="<?php echo $password; ?>"/>
-<!--                            <p>Старый пароль:</p>
+                            <p>Старый пароль:</p>
                             <input type="password" name="password" placeholder="Пароль" value="<?php echo $password; ?>"/>
                             <p>Новый пароль:</p>
                             <input type="password" name="password" placeholder="Пароль" value="<?php echo $password; ?>"/>
                             <p>Подтвердить пароль:</p>
-                            <input type="password" name="password" placeholder="Пароль" value="<?php echo $password; ?>"/>-->
+                            <input type="password" name="password" placeholder="Пароль" value="<?php echo $password; ?>"/>
                             
                             <p>Номер телефона:</p>
                             <input type="text" name="phone" placeholder="Номер телефона" value="<?php echo $phone; ?>"/>

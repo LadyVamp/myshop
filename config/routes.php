@@ -56,6 +56,8 @@ return array(
     'admin/user' => 'adminUser/index',
     // Админпанель:
     'admin' => 'admin/index',
+    
+//    'admin/changepass' => 'admin/changepass',
     // О магазине
     'contacts' => 'site/contact',
     'about' => 'site/about',

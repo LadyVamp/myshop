@@ -3,9 +3,7 @@
 <section>
     <div class="container">
         <div class="row">
-
             <br/>
-
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/admin">Админпанель</a></li>
@@ -27,11 +25,11 @@
                 </ul>
             <?php endif; ?>
 
-            <div class="col-lg-4">
-                <div class="login-form">
+            <!--<div class="col-lg-4">-->
+                <div class="login-form admin">
                     <!--<form action="#" method="post" enctype="multipart/form-data">-->
                     <form action="#" method="post">
-
+                      <div class="col-lg-4">
                         <p>Название товара</p>
                         <input type="text" name="name" placeholder="" value="">
 
@@ -69,8 +67,11 @@
                         <input type="file" name="image" placeholder="" value="">
 
                         <p>Детальное описание</p>
-                        <textarea name="description"></textarea>
-                        
+                        <textarea class="description"></textarea>
+                        <br/><br/>
+                        <input type="submit" name="submit" class="btn btn-default" value="Сохранить">
+                 </div>    
+                 <div class="col-lg-4">       
                         <p>Размер экрана, "</p>
                         <textarea name="screen_size"></textarea>
                         
@@ -96,7 +97,8 @@
                         <input type="text" name="weight" placeholder="" value="">
 
                         <br/><br/>
-
+                 </div>    
+                 <div class="col-lg-4">  
                         <p>Наличие на складе</p>
                         <select name="availability">
                             <option value="1" selected="selected">Да</option>
@@ -126,19 +128,15 @@
                             <option value="1" selected="selected">Отображается</option>
                             <option value="0">Скрыт</option>
                         </select>
+                 </div>        
 
                         <br/><br/>
-
-                        <input type="submit" name="submit" class="btn btn-default" value="Сохранить">
-
-                        <br/><br/>
-
-                    </form>
-                </div>
-            </div>
-            
-        </div>
+             </div>  <!--/login-form admin-->  
+            </form> 
+        </div> <!--/row-->
         <a href="/admin/product/" class="btn btn-default back"><i class="fa fa-arrow-left"></i> Назад</a>
+    </div><!--/container-->
+
     </div>
 </section>
 

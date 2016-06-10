@@ -9,17 +9,17 @@
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/admin">Админпанель</a></li>
-                    <li class="active">Управление брендами</li>
+                    <li class="active">Управление производителями</li>
                 </ol>
             </div>
 
-            <a href="/admin/brand/create" class="btn btn-default back"><i class="fa fa-plus"></i> Добавить бренд</a>
+            <a href="/admin/brand/create" class="btn btn-default back"><i class="fa fa-plus"></i> Добавить производителя</a>
             
-            <h3>Список брендов</h3>
+            <h3>Список производителей</h3>
             <table class="table-bordered table-striped table">
                 <tr>
-                    <th>ID бренда</th>
-                    <th>Название бренда</th>
+                    <th>ID производителя</th>
+                    <th>Название производителя</th>
                     <th></th>
                     <th></th>
                 </tr>

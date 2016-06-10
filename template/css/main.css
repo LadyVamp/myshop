@@ -114,6 +114,7 @@ a#scrollUp i{
     background: none repeat scroll 0 0 #F0F0E9;
 }*/
 
+
 .logo img{
     width: 200px;
     margin-left: 10px;
@@ -1533,10 +1534,14 @@ input[type="checkbox"]:checked:disabled + label::before {
     margin-left: 5%;
 }
 
+textarea {
+    width: 100%;
+}
+
 
 /*  Green-msg   */
 .green-msg span{
-    color: #4cae4c;
+    color: #26a69a;
     font-size: 18px;
 }
 

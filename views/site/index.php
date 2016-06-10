@@ -23,7 +23,7 @@
                     </div>
                     
                     <div class="panel-group category-products">
-                        <h3>Бренды</h3>
+                        <h3>Производители</h3>
                         <?php foreach ($brands as $brandItem): ?>
                             <div class="panel panel-default">
                                 <div class="panel-heading">

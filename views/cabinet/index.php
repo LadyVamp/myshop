@@ -25,7 +25,6 @@
 
                 <a class="btn btn-primary" href="/cabinet/edit" role="button" ><span class="glyphicon glyphicon-cog"></span> Редактировать данные</a>
                 <br/>
-                <!--<a class="btn btn-primary" href="/cabinet/history" role="button" ><span class="glyphicon glyphicon-cog"></span> Список покупок</a>-->
 
                 <?php if ($user['role']=='admin')   
                               echo  "<a class='btn btn-primary' href='/admin/index' role='button' ><span class='glyphicon glyphicon-inbox'></span> Перейти в Панель Администратора</a>";     

@@ -13,17 +13,17 @@
             
             <h4>Редактировать товар #<?php echo $id; ?></h4>
             <br/>
-            <div class="col-lg-4">
+            <!--<div class="col-lg-4">-->
                 <div class="login-form">
                     <form action="#" method="post" enctype="multipart/form-data">
-
+                      <div class="col-lg-4">
                         <p>Название товара</p>
                         <input type="text" name="name" placeholder="" value="<?php echo $product['name']; ?>">
 
                         <p>Артикул</p>
                         <input type="text" name="code" placeholder="" value="<?php echo $product['code']; ?>">
 
-                        <p>Стоимость, $</p>
+                        <p>Стоимость, руб.</p>
                         <input type="text" name="price" placeholder="" value="<?php echo $product['price']; ?>">
 
                         <p>Категория</p>
@@ -55,7 +55,10 @@
                         <p>Изображение товара</p>
                         <img src="<?php echo Product::getImage($product['id']); ?>" width="200" alt="" />
                         <input type="file" name="image" placeholder="" value="<?php echo $product['image']; ?>">
-
+                        
+                        <input type="submit" name="submit" class="btn btn-default" value="Сохранить">
+                     </div> <!--/col-lg-4-->   
+                     <div class="col-lg-4">
                         <p>Детальное описание</p>
                         <textarea name="description"><?php echo $product['description']; ?></textarea>
                         
@@ -81,12 +84,13 @@
                         
                         <p>Время автономной работы, ч</p>
                         <textarea name="battery_life"><?php echo $product['battery_life']; ?></textarea>
-                        
+
+                        <br/><br/>
+                     </div> <!--/col-lg-4--> 
+                     <div class="col-lg-4">
                         <p>Вес, кг</p>
                         <textarea name="weight"><?php echo $product['weight']; ?></textarea>
                         
-                        <br/><br/>
-
                         <p>Наличие на складе</p>
                         <select name="availability">
                             <option value="1" <?php if ($product['availability'] == 1) echo ' selected="selected"'; ?>>Да</option>
@@ -116,16 +120,14 @@
                             <option value="1" <?php if ($product['status'] == 1) echo ' selected="selected"'; ?>>Отображается</option>
                             <option value="0" <?php if ($product['status'] == 0) echo ' selected="selected"'; ?>>Скрыт</option>
                         </select>
-                        
-                        <br/><br/>
-                        
-                        <input type="submit" name="submit" class="btn btn-default" value="Сохранить">
+                     </div>    
+
                         
                         <br/><br/>
                         
                     </form>
                 </div>
-            </div>
+            <!--</div>-->
 
         </div>
         <a href="/admin/product/" class="btn btn-default back" title="Выйти без сохранения"><i class="fa fa-arrow-left"></i> Назад</a>
