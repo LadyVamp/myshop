@@ -8,7 +8,10 @@
                  <div class="green-msg">
                     <?php if ($result): ?>
                          <span><i class="fa fa-check" aria-hidden="true"></i> Вы зарегистрированы!</span>
+                         <div class="space"></div>
+                         <p>Нажмите <a href="/user/login/">здесь</a>, чтобы войти</p>
                  </div>
+                <div class="red-msg">
                     <?php else: ?>
                         <?php if (isset($errors) && is_array($errors)): ?>
                             <ul>
@@ -17,6 +20,7 @@
                                 <?php endforeach; ?>
                             </ul>
                         <?php endif; ?>
+                </div>    
 
                     <div class="signup-form"><!--sign up form-->
                         <h2>Регистрация на сайте</h2>
@@ -24,7 +28,7 @@
                             <input type="text" name="name" placeholder="Имя" value="<?php echo $name; ?>"/>
                             <input type="email" name="email" placeholder="E-mail" value="<?php echo $email; ?>"/>
                             <input type="password" name="password" placeholder="Пароль" value="<?php echo $password; ?>"/>
-                            <input type="submit" name="submit" class="btn btn-default" value="Регистрация" />
+                            <input type="submit" name="submit" class="btn btn-default" value="Зарегистрироваться" />
                         </form>
                     </div><!--/sign up form-->
                 

@@ -167,6 +167,21 @@ class User
         return false;
     }
     
+        /**
+     * Проверяет, что заполнены все поля
+     * @param string $name <p>Имя</p>
+     * @param string $email <p>email</p>
+     * @param string $password <p>Пароль</p>
+     * @return boolean <p>Результат выполнения метода</p>
+     */
+    public static function checkFields($name, $email, $password)
+    {
+        if ( ($name) && ($email) && ($password)){
+            return true;
+        }
+        return false;
+    }
+    
     /**
      * Проверяет email
      * @param string $email <p>E-mail</p>

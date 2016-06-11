@@ -7,6 +7,7 @@
                 <div class="left-sidebar">
                     <h2 class="title text-center">Каталог</h2>
                     <div class="panel-group category-products">
+                        <h3>Категории</h3>
                         <?php foreach ($categories as $categoryItem): ?>
                             <div class="panel panel-default">
                                 <div class="panel-heading">

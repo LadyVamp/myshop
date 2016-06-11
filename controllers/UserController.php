@@ -39,6 +39,10 @@ class UserController
             if (!User::checkPassword($password)) {
                 $errors[] = 'Пароль должен быть не короче 6 символов';
             }
+            
+            if (!User::checkFields($name, $email, $password)) {
+                $errors[] = 'Заполните все поля!';
+            }
 //            if (!User::checkPhone($phone)) {
 //                $errors[] = 'Номер телефона не должен быть короче 10 символов';
 //            }

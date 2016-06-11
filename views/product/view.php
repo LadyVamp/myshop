@@ -45,6 +45,9 @@
                         <div class="col-sm-5">
                             <div class="view-product">
                                 <img src="<?php echo Product::getImage($product['id']); ?>" alt="" />
+                            <br/>
+                            <h5>Описание товара</h5>
+                            <?php echo $product['description']; ?>
                             </div>
                         </div>
                         <div class="col-sm-7">
@@ -86,11 +89,11 @@
                         </div>
                     </div>
                     <div class="row">                                
-                        <div class="col-sm-12">
+<!--                        <div class="col-sm-12">
                             <br/>
                             <h5>Описание товара</h5>
-                            <?php echo $product['description']; ?>
-                        </div>
+                            <?php //echo $product['description']; ?>
+                        </div>-->
                     </div>
                 </div><!--/product-details-->
 

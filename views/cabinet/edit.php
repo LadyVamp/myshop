@@ -1,5 +1,5 @@
-<?php //include ROOT . '/views/layouts/header.php'; ?>
-<?php include ROOT . '/views/layouts/header_admin.php'; ?>
+<?php include ROOT . '/views/layouts/header.php'; ?>
+<?php //include ROOT . '/views/layouts/header_admin.php'; ?>
 
 <section>
     <div class="container">
@@ -23,8 +23,8 @@
                         <?php endif; ?>
 
                     <div class="signup-form"><!--sign up form-->
-                        <!--<h3>Редактирование данных</h3>-->
-                        <h3>Сменить пароль</h3>
+                        <h3>Редактирование данных</h3>
+                        <!--<h3>Сменить пароль</h3>-->
                         <form action="#" method="post">
                             <p>Имя:</p>
                             <input type="text" name="name" placeholder="Имя" value="<?php echo $name; ?>"/>
