@@ -17,7 +17,7 @@
                 <li><a class="btn btn-default" href="/admin/brand" role="button" ><span class="glyphicon glyphicon-star-empty"></span> Управление производителями</a></li>
                 <li><a class="btn btn-default" href="/admin/order" role="button" ><span class="glyphicon glyphicon-shopping-cart"></span> Управление заказами</a></li>
                 <li><a class="btn btn-default" href="/admin/user" role="button" ><span class="glyphicon glyphicon-user"></span> Управление пользователями</a></li>
-                <!--<li><a class="btn btn-default" href="/cabinet/edit" role="button" ><span class="glyphicon glyphicon-cog"></span> Сменить пароль</a></li>-->
+                <li><a class="btn btn-default" href="/admin/stat" role="button" ><span class="glyphicon glyphicon-stats"></span> Статистика продаж</a></li>   
                 <li><a class="btn btn-default" href="/cabinet/edit" role="button" ><span class="glyphicon glyphicon-cog"></span> Сменить пароль</a></li>
             </ul>
             </div>
