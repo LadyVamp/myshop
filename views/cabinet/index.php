@@ -1,6 +1,7 @@
 <!--pos.:    views/cabinet/index    -->
 <?php include ROOT . '/views/layouts/header.php'; ?>
 
+
 <section>
     <div class="container">
         <div class="row cabinet">
@@ -23,7 +24,13 @@
                 </h4>           
                 <br/>
 
-                <a class="btn btn-primary" href="/cabinet/edit" role="button" ><span class="glyphicon glyphicon-cog"></span> Редактировать данные</a>
+                <a class="btn btn-primary" href="/cabinet/edit" role="button" ><span class="glyphicon glyphicon-cog"></span> Редактировать данные</a><br/>
+                
+                <?php if (!($user['role']=='admin' || $user['role']=='manager' ))   //история заказов только для покупателя
+//                    echo "<a class='btn btn-primary' href='/views/cabinet/history.php' role='button' ><span class='glyphicon glyphicon-list-alt'></span> История заказов</a>"; //тогда стили слетают и фиг вернешь
+                      echo  "<a class='btn btn-primary' href='/cabinet/history' role='button' ><span class='glyphicon glyphicon-inbox'></span> История заказов</a>";    
+                ?>
+                
                 <br/>
 
                 <?php if ($user['role']=='admin')   
