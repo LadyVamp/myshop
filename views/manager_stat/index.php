@@ -35,11 +35,11 @@
             <div class="space"></div>
         </div>    
             <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-7">
                 <div id="chart_div"></div>
             </div>  
             <!--<div class="col-lg-1"></div>--> 
-            <div class="col-lg-3">
+            <div class="col-lg-5">
                 <div id="piechart" ></div>
             </div>     
     <br/> 
@@ -70,7 +70,7 @@
           title: '',
           subtitle: 'Продажи по производителям',
           'width': 500,
-          'height': 500,
+          'height': 400,
           'is3D': true
         };
 

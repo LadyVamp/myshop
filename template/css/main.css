@@ -11,7 +11,7 @@ body {
     background:;
     position: relative;
     font-weight:400px;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 html, body {
@@ -49,8 +49,8 @@ a {
     -moz-transition: 300ms;
     -o-transition: 300ms;
     transition: 300ms;
-    /*color: #3366CC;*/
     color: #009688;
+    font-size: 17px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -142,6 +142,7 @@ a#scrollUp i{
 .contact-information-map img {
     height: 300px;   
 }
+
 
 .header-middle .container .row {
     border-bottom: 1px solid #f5f5f5;
@@ -635,7 +636,7 @@ h2.title {
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     position: relative;
 }
 
@@ -669,7 +670,7 @@ h2.title {
 
 
 .productinfo p{
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 400;
     height: 34px;
     color: #696763;
@@ -720,7 +721,7 @@ h2.title {
     border-radius: 0;
     color: #696763;
     font-size: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 0;
 }
 
 .add-to-cart:hover {
@@ -1538,6 +1539,13 @@ textarea {
     width: 100%;
 }
 
+
+.adminpanel-top {
+    background: #FF9800;
+}
+.adminpanel-top a {
+    color: #fff;
+}
 
 /*  Green-msg   */
 .green-msg span{

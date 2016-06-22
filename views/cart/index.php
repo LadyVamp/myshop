@@ -75,7 +75,8 @@
                                 </tr>
                             
                         </table>
-                        
+                                              
+                        <a class="btn btn-default checkout" href="/cart"><i class="fa fa-refresh"></i> Пересчитать заказ</a>
                         <a class="btn btn-default checkout" href="/cart/checkout"><i class="fa fa-shopping-cart"></i> Оформить заказ</a>
                     <?php else: ?>
                         <p>Корзина пуста</p>
